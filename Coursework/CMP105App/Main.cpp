@@ -6,8 +6,7 @@
 // @reviser William Kavanagh (2025)
 
 #include <iostream>
-#include "Level.h"
-#include "Framework/AudioManager.h"
+#include "Level1.h"
 #include "Framework/GameState.h"
 
 #ifndef SFML_VERSION_MAJOR
@@ -74,16 +73,15 @@ void windowProcess(sf::RenderWindow& window, Input& in)
 int main()
 {
 	//Create the window
-	sf::RenderWindow window(sf::VideoMode({ 800, 600 }), "cmp105 framework");
+	sf::RenderWindow window(sf::VideoMode({ 1000, 600 }), "cmp105: Lab 5");
 	window.setVerticalSyncEnabled(true);
 
 	// Initialise input and manager objects.
-	AudioManager audioManager;
 	Input input;
 	GameState gameState;
 
 	// Create level objects that may reference manager objects
-	Level level(window, input, gameState, audioManager);
+	Level1 level1(window, input, gameState);
 
 	// Initialise objects for delta time
 	sf::Clock clock;
@@ -101,9 +99,9 @@ int main()
 		if (deltaTime > 0.1f) deltaTime = 0.1f; // Clamp delta time to avoid large jumps
 
 		// Call standard game loop functions (input, update and render)
-		level.handleInput(deltaTime);
-		level.update(deltaTime);
-		level.render();
+		level1.handleInput(deltaTime);
+		level1.update(deltaTime);
+		level1.render();
 
 		// Update input class, handle pressed keys
 		// Must be done last.

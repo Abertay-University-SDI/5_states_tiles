@@ -36,20 +36,17 @@
     <ClCompile Include="Framework\TileMap.cpp">
       <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="Level.cpp">
+    <ClCompile Include="Level1.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Framework\AudioManager.cpp">
-      <Filter>Framework</Filter>
-    </ClCompile>
-    <ClCompile Include="Framework\SoundObject.cpp">
-      <Filter>Framework</Filter>
     </ClCompile>
     <ClCompile Include="Framework\GameObject.cpp">
       <Filter>Framework</Filter>
     </ClCompile>
     <ClCompile Include="Framework\BaseLevel.cpp">
       <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -68,20 +65,17 @@
     <ClInclude Include="Framework\TileMap.h">
       <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Level.h">
+    <ClInclude Include="Level1.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Framework\AudioManager.h">
-      <Filter>Framework</Filter>
-    </ClInclude>
-    <ClInclude Include="Framework\SoundObject.h">
-      <Filter>Framework</Filter>
     </ClInclude>
     <ClInclude Include="Framework\GameObject.h">
       <Filter>Framework</Filter>
     </ClInclude>
     <ClInclude Include="Framework\BaseLevel.h">
       <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

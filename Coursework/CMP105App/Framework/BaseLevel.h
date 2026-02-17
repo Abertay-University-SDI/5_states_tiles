@@ -10,7 +10,6 @@
 #pragma warning(pop)
 
 #include "Input.h"
-#include "AudioManager.h"
 #include "GameState.h"
 #include <string>
 #include <iostream>
@@ -19,7 +18,7 @@ class BaseLevel
 {
 public:
 
-	BaseLevel(sf::RenderWindow& hwnd, Input& in, GameState& gs, AudioManager& aud);
+	BaseLevel(sf::RenderWindow& hwnd, Input& in, GameState& gs);
 	BaseLevel(sf::RenderWindow& hwnd);
 	virtual ~BaseLevel() = default;
 
@@ -36,6 +35,5 @@ protected:
 	sf::RenderWindow& m_window;
 	Input& m_input;
 	GameState& m_gameState;
-	AudioManager& m_audio;
 };
 
